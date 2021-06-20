@@ -117,3 +117,4 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/opt/ghc/bin
+export PATH=$PATH:$HOME/.cabal/bin
