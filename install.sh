@@ -4,7 +4,7 @@
 sudo add-apt-repository -y ppa:hvr/ghc
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install -y build-essential make vim tmux kitty fonts-firacode
+sudo apt-get install -y build-essential make curl vim tmux kitty fonts-firacode
 
 # set focus follow mouse
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
@@ -20,11 +20,16 @@ git config --global user.email "dwc1295@gmail.com"
 git config --global user.name "dopamane"
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 
+# vim-plug installation. see https://github.com/junegunn/vim-plug
+curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p $HOME/.vim/plugged
+
 # links
 mkdir -p $HOME/.config/kitty/ && ln -svf $(pwd)/.config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
 
 ln -svf $(pwd)/.profile $HOME/.profile
 ln -svf $(pwd)/.bashrc $HOME/.bashrc
 ln -svf $(pwd)/.tmux.conf $HOME/.tmux.conf
+ln -svf $(pwd)/.vimrc $HOME/.vimrc
 
 source $HOME/.bashrc
