@@ -4,7 +4,7 @@
 sudo add-apt-repository -y ppa:hvr/ghc
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install -y build-essential make curl vim tmux kitty fonts-firacode
+sudo apt-get install -y build-essential make curl z3 vim tmux kitty fonts-firacode
 
 # set focus follow mouse
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
