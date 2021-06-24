@@ -120,3 +120,4 @@ export PATH=$PATH:/opt/ghc/bin
 export PATH=$PATH:$HOME/.cabal/bin
 export PATH=$PATH:$HOME/.local/bin # Haskell Stack
 export PATH=$PATH:$HOME/github.com/kframework/kore/.build/kore/bin # Kore
+export PATH=$PATH:$HOME/github.com/kframework/k/k-distribution/target/release/k/bin # K
