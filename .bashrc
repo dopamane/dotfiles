@@ -116,8 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/opt/ghc/bin
-export PATH=$PATH:$HOME/.cabal/bin
+export PATH=$PATH:/opt/ghc/bin # GHC
+export PATH=$PATH:$HOME/.cabal/bin # Cabal
 export PATH=$PATH:$HOME/.local/bin # Haskell Stack
 export PATH=$PATH:$HOME/github.com/kframework/kore/.build/kore/bin # Kore
 export PATH=$PATH:$HOME/github.com/kframework/k/k-distribution/target/release/k/bin # K
+export PATH=$PATH:/opt/riscv/bin # RISC-V GNU Toolchain
