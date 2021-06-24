@@ -118,3 +118,4 @@ fi
 
 export PATH=$PATH:/opt/ghc/bin
 export PATH=$PATH:$HOME/.cabal/bin
+export PATH=$PATH:$HOME/.local/bin # Haskell Stack
