@@ -121,4 +121,5 @@ export PATH=$PATH:$HOME/.cabal/bin # Cabal
 export PATH=$PATH:$HOME/.local/bin # Haskell Stack
 export PATH=$PATH:$HOME/github.com/kframework/kore/.build/kore/bin # Kore
 export PATH=$PATH:$HOME/github.com/kframework/k/k-distribution/target/release/k/bin # K
+export PATH=$PATH:$HOME/github.com/kframework/evm-semantics/.build/usr/bin # EVM Semantics
 export PATH=$PATH:/opt/riscv/bin # RISC-V GNU Toolchain
