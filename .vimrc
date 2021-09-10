@@ -11,4 +11,5 @@ let g:haskell_enable_quantification=1
 let g:haskell_enable_pattern_synonyms=1
 let g:haskell_indent_disable=1
 Plug 'neovimhaskell/haskell-vim'
+Plug 'kframework/k-editor-support', { 'rtp': 'vim' }
 call plug#end()
