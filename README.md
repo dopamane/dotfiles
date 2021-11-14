@@ -39,6 +39,7 @@ See [tmux cheatsheet](https://tmuxcheatsheet.com/).
 * Switch pane: <kbd>Ctrl + b</kbd> <kbd>Up/Down/Left/Right</kbd>
 * Resize pane: <kbd>Ctrl + b</kbd> <kbd>Ctrl + Up/Down/Left/Right</kbd>
 * Close pane: <kbd>Ctrl + b</kbd> <kbd>x</kbd>
+* Copy mode: <kbd>Ctrl + b</kbd> <kbd>[</kbd>
 
 ### Vim
 * Start: `vim`
@@ -49,12 +50,14 @@ See [tmux cheatsheet](https://tmuxcheatsheet.com/).
 * Write: `:w`
 * Quit: `:q`
 * Write and quit: `:wq`
+* Jump to end of file: `:$`
 
 ### Git
 * Search code: `git grep [-B n] [-A m] <pattern> [path/to/search]`
     * `-B n`, `-A m` options specify number of context lines to show before and after match.
-    * `gg [n] <pattern> [path/to/search]` alias for `git grep [-B n -A n] <pattern> [path/to/search]`
+    * `gg <pattern> [path/to/search] [n]` alias for `git grep [-B n -A n] <pattern> [path/to/search]`
         * Default `n=5`, `path/to/search=.`
+        * `gg <pattern> "" 7`: use default path but modify context number
 
 ### Hoogle
 * Generate stackage database: `hoogle generate`

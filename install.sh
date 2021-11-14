@@ -29,6 +29,7 @@ mkdir -p $HOME/.config/kitty/ && ln -svf $(pwd)/.config/kitty/kitty.conf $HOME/.
 
 ln -svf $(pwd)/.profile $HOME/.profile
 ln -svf $(pwd)/.bashrc $HOME/.bashrc
+ln -svf $(pwd)/.bash_aliases $HOME/.bash_aliases
 ln -svf $(pwd)/.tmux.conf $HOME/.tmux.conf
 ln -svf $(pwd)/.vimrc $HOME/.vimrc
 ln -svf $(pwd)/.ghci $HOME/.ghci
