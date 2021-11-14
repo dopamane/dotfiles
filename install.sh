@@ -31,5 +31,8 @@ ln -svf $(pwd)/.profile $HOME/.profile
 ln -svf $(pwd)/.bashrc $HOME/.bashrc
 ln -svf $(pwd)/.tmux.conf $HOME/.tmux.conf
 ln -svf $(pwd)/.vimrc $HOME/.vimrc
+ln -svf $(pwd)/.ghci $HOME/.ghci
+
+chmod go-w $HOME/.ghci
 
 source $HOME/.bashrc
