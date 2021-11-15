@@ -1,1 +1,4 @@
 :set prompt "λ> "
+
+import Prelude
+:def hoogle \x -> return $ ":!hoogle --color " ++ x

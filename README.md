@@ -53,9 +53,9 @@ See [tmux cheatsheet](https://tmuxcheatsheet.com/).
 * Jump to end of file: `:$`
 
 ### Git
-* Search code: `git grep [-B n] [-A m] <pattern> [path/to/search]`
-    * `-B n`, `-A m` options specify number of context lines to show before and after match.
-    * `gg <pattern> [path/to/search] [n]` alias for `git grep [-B n -A n] <pattern> [path/to/search]`
+* Search code: `git grep [-NUM] <pattern> [path/to/search]`
+    * `-NUM` specify number of context lines to show before and after match.
+    * `gg <pattern> [path/to/search] [NUM]` alias for `git grep [-NUM] <pattern> [path/to/search]`
         * Default `n=5`, `path/to/search=.`
         * `gg <pattern> "" 7`: use default path but modify context number
 
@@ -67,3 +67,4 @@ cabal haddock <project> --haddock-hoogle
 hoogle generate --local=.
 ```
 * Search: `hoogle <pattern>`
+    * `hs pattern` alias: `hoogle <pattern> | less -Sc`
