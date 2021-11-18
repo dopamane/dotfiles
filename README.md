@@ -37,6 +37,8 @@ See [tmux cheatsheet](https://tmuxcheatsheet.com/).
 * Split pane horizontally: <kbd>Ctrl + b</kbd> <kbd>%</kbd>
 * Split pane vertically: <kbd>Ctrl + b</kbd> <kbd>"</kbd>
 * Switch pane: <kbd>Ctrl + b</kbd> <kbd>Up/Down/Left/Right</kbd>
+* Move pane left: <kbd>Ctrl + b</kbd> <kbd>{</kbd>
+* Move pane right: <kbd>Ctrl + b</kbd> <kbd>}</kbd>
 * Resize pane: <kbd>Ctrl + b</kbd> <kbd>Ctrl + Up/Down/Left/Right</kbd>
 * Close pane: <kbd>Ctrl + b</kbd> <kbd>x</kbd>
 * Copy mode: <kbd>Ctrl + b</kbd> <kbd>[</kbd>
